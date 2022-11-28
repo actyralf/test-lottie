@@ -16,21 +16,25 @@ export function Header() {
             autoplay: true,
             animationData: require("../public/HeaderAnimation")
         })
-    }, []) */
-
+    }, [])
+ */
 
 
 
   return (
   <StyledHeader>
-    <h3>This is the Header Component</h3>
- {/*    <section className="container" ref={container}></section> */}
+    <h3>Taschen</h3>
+{/*     <AnimationContainer ref={container}></AnimationContainer> */}
+    <h3>Anwalt</h3>
     </StyledHeader>
 
   )
 }
-
-
+/* 
+const AnimationContainer = styled.section`
+width: 70px;
+height: 100px;
+`; */
 
 const StyledHeader = styled.div`
 display: flex;
