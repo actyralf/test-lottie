@@ -7,10 +7,10 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         display: flex;
         justify-content: center;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }
     * {
         box-sizing: border-box;
+        font-family: 'Jost', sans-serif;
     }
 
     

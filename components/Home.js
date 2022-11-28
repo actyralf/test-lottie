@@ -20,7 +20,8 @@ const StyledBody = styled.section`
   width: 90vw;
   height: 75vh;
   gap: 20px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 `;
 
 
