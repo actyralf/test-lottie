@@ -15,6 +15,7 @@ const StyledBody = styled.section`
   justify-content: center;
   align-items: center;
   background-color: #F3E8E8;
+  color: #572887;
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 90vw;

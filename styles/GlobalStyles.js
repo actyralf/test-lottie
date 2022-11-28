@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
     
 :root {
     --primary-color: #4C6A28;
-    --text-color: #572887;
+    --color: #572887;
     --default-border-radius: 10px;
     --button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
