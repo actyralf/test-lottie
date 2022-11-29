@@ -1,7 +1,7 @@
 import styled from "styled-components";
 /* import Link from "next/link"; */
 
-export function Main() {
+export default function Main() {
   return <StyledBody>This is the main component</StyledBody>;
 }
 

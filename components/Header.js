@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useEffect, useRef } from "react"; */
 /* import Link from "next/link"; */
 
-export function Header() {
+export default function Header() {
   /* const container = useRef(null);    
 
     useEffect(() => {
