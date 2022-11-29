@@ -6,9 +6,25 @@ import Link from "next/link";
 export default function Navigation() {
   return (
     <StyledNav>
-      <Link href="/"><Icon icon={homeRounded} color="#572887" width="45px" title="Home" /></Link>
-      <Link href="/bookmarks"><Icon icon="mdi:bookmark-multiple" color="#572887" width="40px" title="Bookmarks"/></Link>
-      <Link href="/map"><Icon icon="mdi:map-marker-multiple" color="#572887" width="40px" title="Map" /></Link>
+      <Link href="/">
+        <Icon icon={homeRounded} color="#572887" width="45px" title="Home" />
+      </Link>
+      <Link href="/bookmarks">
+        <Icon
+          icon="mdi:bookmark-multiple"
+          color="#572887"
+          width="40px"
+          title="Bookmarks"
+        />
+      </Link>
+      <Link href="/map">
+        <Icon
+          icon="mdi:map-marker-multiple"
+          color="#572887"
+          width="40px"
+          title="Map"
+        />
+      </Link>
     </StyledNav>
   );
 }
