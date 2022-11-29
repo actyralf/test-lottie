@@ -1,13 +1,30 @@
 import styled from "styled-components";
 import {Icon} from "@iconify/react";
 import homeRounded from "@iconify/icons-material-symbols/home-rounded";
+import Link from "next/link";
 
 export default function Navigation() {
   return (
     <StyledNav>
-      <Icon icon={homeRounded} color="#572887" width="45px" />
-      <Icon icon="mdi:bookmark-multiple" color="#572887" width="40px" />
-      <Icon icon="mdi:map-marker-multiple" color="#572887" width="40px" />
+      <Link href="/">
+        <Icon icon={homeRounded} color="#572887" width="45px" title="Home" />
+      </Link>
+      <Link href="/bookmarks">
+        <Icon
+          icon="mdi:bookmark-multiple"
+          color="#572887"
+          width="40px"
+          title="Bookmarks"
+        />
+      </Link>
+      <Link href="/map">
+        <Icon
+          icon="mdi:map-marker-multiple"
+          color="#572887"
+          width="40px"
+          title="Map"
+        />
+      </Link>
     </StyledNav>
   );
 }
