@@ -1,8 +1,9 @@
 import {render, screen} from "@testing-library/react";
 import Home from "../pages/index";
+import { Navigation } from "../components/Navigation";
 import "@testing-library/jest-dom";
 
-describe("Home", () => {
+/* describe("Home", () => {
   it("renders an octopus", () => {
     render(<Home />);
 
@@ -12,9 +13,9 @@ describe("Home", () => {
 
     expect(heading).toBeInTheDocument();
   });
-});
+}); */
 
-/* 
+
 describe("index", () => {
   it("checks if there is a navbar component", () => {
     render(<Navigation />);
@@ -23,4 +24,4 @@ describe("index", () => {
 
     expect(navbar).toBeInTheDocument();
   });
-}); */
+});
