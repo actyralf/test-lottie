@@ -1,8 +1,7 @@
-import styled from "styled-components";
-/* import Link from "next/link"; */
+/* import styled from "styled-components";
 
 export default function Main() {
-  return <StyledBody>This is the main component</StyledBody>;
+  return <StyledBody></StyledBody>;
 }
 
 const StyledBody = styled.div`
