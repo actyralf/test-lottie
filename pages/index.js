@@ -23,7 +23,7 @@ export default function HomePage() {
       <StyledBody>
         <h3>Wo drückt der Schuh?</h3>
         <Link href="/bestellung">
-       {/*  <BestellungAnimation href={container}></BestellungAnimation> */}
+{/*           <BestellungAnimation href={container}></BestellungAnimation> */}
           <StyledButton>Online bestellen und kaufen</StyledButton>
         </Link>
         <Link href="/widerruf">
@@ -51,6 +51,8 @@ const StyledBody = styled.div`
 const StyledButton = styled.button`
   color: #572887;
   font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
   background-color: #E6CEEE;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
@@ -61,6 +63,7 @@ const StyledButton = styled.button`
 /* const BestellungAnimation = styled.section`
   width: 70px;
   height: 90px;
+  z-index: 3;
 `; */
 
 
