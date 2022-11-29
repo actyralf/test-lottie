@@ -1,36 +1,33 @@
 import styled from "styled-components";
 import lottie from "lottie-web";
-import { useEffect, useRef } from "react"; 
+import {useEffect, useRef} from "react";
 
 export default function Header() {
-const container = useRef(null);    
+  const container = useRef(null);
 
-    useEffect(() => {
-        lottie.loadAnimation({
-            container: container.current,
-            render: "svg",
-            loop: true,
-            autoplay: true,
-            animationData: require("../public/HeaderAnimation")
-        })
-    }, [])
-
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: container.current,
+      render: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: require("../public/HeaderAnimation"),
+    });
+  }, []);
 
   return (
     <StyledHeader>
       <h3>Taschen</h3>
-     <AnimationContainer ref={container}></AnimationContainer>
+      <AnimationContainer ref={container}></AnimationContainer>
       <h3>Anwalt</h3>
     </StyledHeader>
   );
 }
 
-
-
 const AnimationContainer = styled.section`
-width: 70px;
-height: 100px;
-`; 
+  width: 70px;
+  height: 100px;
+`;
 
 const StyledHeader = styled.div`
   display: flex;

@@ -5,7 +5,7 @@ export default function Main() {
   return <StyledBody>This is the main component</StyledBody>;
 }
 
-const StyledBody = styled.section`
+const StyledBody = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
