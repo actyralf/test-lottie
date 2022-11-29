@@ -1,15 +1,13 @@
 import {render, screen} from "@testing-library/react";
-import Home from "../pages/index";
+import Navigation from "../components/Navigation";
 import "@testing-library/jest-dom";
 
-describe("Home", () => {
-  it("renders an octopus", () => {
-    render(<Home />);
+describe("HomePage", () => {
+  it("checks if there is a nav component in HomePage", () => {
+    render(<Navigation />);
 
-    const heading = screen.getByRole("heading", {
-      name: /🐙/i,
-    });
+    const navbar = screen.getByRole("navigation");
 
-    expect(heading).toBeInTheDocument();
+    expect(navbar).toBeInTheDocument();
   });
 });
