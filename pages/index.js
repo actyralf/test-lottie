@@ -1,12 +1,13 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
     <div>
       <StyledBody>
         <h3>Wo drückt der Schuh?</h3>
-        <StyledButton>Online bestellen und kaufen</StyledButton>
-        <StyledButton>Widerruf und Retoure</StyledButton>
+        <Link href="/bestellung"><StyledButton>Online bestellen und kaufen</StyledButton></Link>
+        <Link href="/widerruf"><StyledButton>Widerruf und Retoure</StyledButton></Link>
       </StyledBody>
     </div>
   );
