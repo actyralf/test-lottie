@@ -1,20 +1,15 @@
 import styled from "styled-components";
 /* import Link from "next/link"; */
 
-
 export function Main() {
-  return (
-    <StyledBody>
-      This is the main component
-    </StyledBody>
-  );
+  return <StyledBody>This is the main component</StyledBody>;
 }
 
 const StyledBody = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F3E8E8;
+  background-color: #f3e8e8;
   color: #572887;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -24,7 +19,6 @@ const StyledBody = styled.section`
   margin-top: 10px;
   margin-bottom: 10px;
 `;
-
 
 /* const StyledButton = styled.button`
   display: flex;
