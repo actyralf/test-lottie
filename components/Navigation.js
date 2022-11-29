@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 import homeRounded from '@iconify/icons-material-symbols/home-rounded';
 
 
-export function Navigation() {
+export default function Navigation() {
     return (
     <StyledNav>
         <Icon icon={homeRounded} color="#572887" width="45px"/>
@@ -15,7 +15,7 @@ export function Navigation() {
 
 
 
-const StyledNav = styled.div`
+const StyledNav = styled.nav`
 display: flex;
 justify-content: space-around;
 align-items: center;
