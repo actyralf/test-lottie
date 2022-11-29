@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import lottie from "lottie-web";
 import { useEffect, useRef } from "react"; 
-import Link from "next/link";
 
 export default function Header() {
 const container = useRef(null);    
