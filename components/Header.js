@@ -17,7 +17,7 @@ export default function Header() {
   }, []);
 
   return (
-    <Link href="/">
+    <Link href="/" style={{textDecoration: "none"}}>
       <StyledHeader>
         <Styledh3>Taschen</Styledh3>
         <AnimationContainer ref={container}></AnimationContainer>
