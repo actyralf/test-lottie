@@ -13,7 +13,7 @@ export default function HomePage() {
       render: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("../public/animations/BestellungAnimation"),
+      animationData: require("../public/BestellungAnimation"),
     });
   }, []);
 
@@ -23,7 +23,7 @@ export default function HomePage() {
       render: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("../public/animations/WiderrufAnimation"),
+      animationData: require("../public/WiderrufAnimation"),
     });
   }, []);
 
