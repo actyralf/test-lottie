@@ -31,21 +31,23 @@ export default function HomePage() {
     <div>
       <StyledBody>
         <h3>Wo drückt der Schuh?</h3>
-        <Link href="/bestellung">
-          <StyledButton>
-            <BestellungAnimation href={bestellungContainer}>
-              Here!
+
+
+        <Link href="/bestellung" style={{textDecoration: "none"}}>
+          <StyledBestellungButton>
+            <BestellungAnimation ref={bestellungContainer}>
             </BestellungAnimation>
             Online bestellen und kaufen
-          </StyledButton>
+          </StyledBestellungButton>
         </Link>
-        <Link href="/widerruf">
-          <StyledButton>
-            <WiderrufAnimation href={widerrufContainer}>
-              Here!
+
+
+        <Link href="/widerruf" style={{textDecoration: "none"}}>
+          <StyledWiderufButton>
+            <WiderrufAnimation ref={widerrufContainer}>
             </WiderrufAnimation>
             Widerruf und Retoure
-          </StyledButton>
+          </StyledWiderufButton>
         </Link>
       </StyledBody>
     </div>
@@ -53,13 +55,14 @@ export default function HomePage() {
 }
 
 const StyledBody = styled.div`
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #f3e8e8;
   color: #572887;
   border-radius: 10px;
-  /*  border: 1px solid rgba(163, 134, 182, 0.5); */
+  border: 1px solid rgba(163, 134, 182, 0.5);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 90vw;
   height: 75vh;
@@ -67,28 +70,55 @@ const StyledBody = styled.div`
   margin-bottom: 10px;
 `;
 
-const StyledButton = styled.button`
+const StyledBestellungButton = styled.button`
   color: #572887;
   font-size: 18px;
   font-weight: 300;
   font-style: normal;
+  text-decoration: none;
   background-color: #e6ceee;
   border-radius: 10px;
   border: 1px solid rgba(163, 134, 182, 0.5);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: 30vh;
+  height: 20vh;
   width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+`;
+
+const StyledWiderufButton = styled.button`
+  color: #572887;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
   text-decoration: none;
+  background-color: #e6ceee;
+  border-radius: 10px;
+  border: 1px solid rgba(163, 134, 182, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 20vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
 `;
 
 const BestellungAnimation = styled.section`
-  width: 70px;
-  height: 90px;
-  z-index: 10;
+  width: 190px;
+  height: 220px;
 `;
 
 const WiderrufAnimation = styled.section`
-  width: 70px;
-  height: 90px;
-  z-index: 10;
+  width: 190px;
+  height: 220px;
 `;
+
+/* const BestellungContainer = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: flex-start;
+` */
