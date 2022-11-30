@@ -32,20 +32,18 @@ export default function HomePage() {
       <StyledBody>
         <h3>Wo drückt der Schuh?</h3>
 
-
         <Link href="/bestellung" style={{textDecoration: "none"}}>
           <StyledBestellungButton>
-            <BestellungAnimation ref={bestellungContainer}>
-            </BestellungAnimation>
+            <BestellungAnimation
+              ref={bestellungContainer}
+            ></BestellungAnimation>
             Online bestellen und kaufen
           </StyledBestellungButton>
         </Link>
 
-
         <Link href="/widerruf" style={{textDecoration: "none"}}>
           <StyledWiderufButton>
-            <WiderrufAnimation ref={widerrufContainer}>
-            </WiderrufAnimation>
+            <WiderrufAnimation ref={widerrufContainer}></WiderrufAnimation>
             Widerruf und Retoure
           </StyledWiderufButton>
         </Link>
