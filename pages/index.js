@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import Link from "next/link";
-import lottie from "lottie-web";
-import {useEffect, useRef} from "react";
 import bestellungAnimation from "../public/BestellungAnimation";
 import widerrufAnimation from "../public/WiderrufAnimation";
 import Lottie from "lottie-react";
