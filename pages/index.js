@@ -4,30 +4,31 @@ import lottie from "lottie-web";
 import {useEffect, useRef} from "react";
 import bestellungAnimation from "../public/BestellungAnimation";
 import widerrufAnimation from "../public/WiderrufAnimation";
+import Lottie from "lottie-react";
 
 export default function HomePage() {
-  const widerrufContainer = useRef(null);
-  const bestellungContainer = useRef(null);
+  // const widerrufContainer = useRef(null);
+  // const bestellungContainer = useRef(null);
 
-  useEffect(() => {
-    lottie.loadAnimation({
-      container: bestellungContainer.current,
-      render: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: bestellungAnimation,
-    });
-  }, []);
+  // useEffect(() => {
+  //   lottie.loadAnimation({
+  //     container: bestellungContainer.current,
+  //     render: "svg",
+  //     loop: true,
+  //     autoplay: true,
+  //     animationData: bestellungAnimation,
+  //   });
+  // }, []);
 
-  useEffect(() => {
-    lottie.loadAnimation({
-      container: widerrufContainer.current,
-      render: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: widerrufAnimation,
-    });
-  }, []);
+  // useEffect(() => {
+  //   lottie.loadAnimation({
+  //     container: widerrufContainer.current,
+  //     render: "svg",
+  //     loop: true,
+  //     autoplay: true,
+  //     animationData: widerrufAnimation,
+  //   });
+  // }, []);
 
   return (
     <div>
@@ -36,16 +37,18 @@ export default function HomePage() {
 
         <Link href="/bestellung" style={{textDecoration: "none"}}>
           <StyledBestellungButton>
-            <BestellungAnimation
-              ref={bestellungContainer}
-            ></BestellungAnimation>
+            <BestellungAnimation>
+              <Lottie animationData={bestellungAnimation} loop={true} />
+            </BestellungAnimation>
             Online bestellen und kaufen
           </StyledBestellungButton>
         </Link>
 
         <Link href="/widerruf" style={{textDecoration: "none"}}>
           <StyledWiderufButton>
-            <WiderrufAnimation ref={widerrufContainer}></WiderrufAnimation>
+            <WiderrufAnimation>
+              <Lottie animationData={widerrufAnimation} loop={true} />
+            </WiderrufAnimation>
             Widerruf und Retoure
           </StyledWiderufButton>
         </Link>

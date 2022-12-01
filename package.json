@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@next/font": "^13.0.5",
+    "lottie-react": "^2.3.1",
     "lottie-web": "^5.10.0",
     "mongoose": "^6.7.3",
     "next": "13.0.4",
