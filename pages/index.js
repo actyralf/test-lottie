@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Link from "next/link";
-import bestellungAnimation from "../public/BestellungAnimation";
-import widerrufAnimation from "../public/WiderrufAnimation";
+import bestellungAnimation from "../assets/BestellungAnimation.json";
+import widerrufAnimation from "../assets/WiderrufAnimation.json";
 import Lottie from "lottie-react";
 
 export default function HomePage() {
