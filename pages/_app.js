@@ -10,17 +10,7 @@
 // });
 
 function MyApp({Component, pageProps}) {
-  return (
-    <>
-      {/* <main className={jost.className}> */}
-      {/* <main> */}
-      {/* <GlobalStyles /> */}
-      {/* <Header /> */}
-      <Component {...pageProps} />
-      {/* <Navigation /> */}
-      {/* </main> */}
-    </>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
