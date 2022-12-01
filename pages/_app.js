@@ -13,12 +13,12 @@ function MyApp({Component, pageProps}) {
   return (
     <>
       {/* <main className={jost.className}> */}
-      <main>
-        <GlobalStyles />
-        <Header />
-        <Component {...pageProps} />
-        <Navigation />
-      </main>
+      {/* <main> */}
+      {/* <GlobalStyles /> */}
+      {/* <Header /> */}
+      <Component {...pageProps} />
+      {/* <Navigation /> */}
+      {/* </main> */}
     </>
   );
 }
