@@ -2,6 +2,8 @@ import styled from "styled-components";
 import Link from "next/link";
 import lottie from "lottie-web";
 import {useEffect, useRef} from "react";
+import bestellungAnimation from "../public/BestellungAnimation";
+import widerrufAnimation from "../public/WiderrufAnimation";
 
 export default function HomePage() {
   const widerrufContainer = useRef(null);
@@ -13,7 +15,7 @@ export default function HomePage() {
       render: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("../public/BestellungAnimation"),
+      animationData: bestellungAnimation,
     });
   }, []);
 
@@ -23,7 +25,7 @@ export default function HomePage() {
       render: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("../public/WiderrufAnimation"),
+      animationData: widerrufAnimation,
     });
   }, []);
 
